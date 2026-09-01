@@ -1,0 +1,36 @@
+# Python virtual environments
+venv/
+venv312/
+venv_linux/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# MLflow
+mlflow.db
+mlruns/
+
+# ZenML local state
+.zen/
+zenml_recovered.db
+
+# Prometheus runtime data
+prometheus-data/
+
+# Generated predictions
+data/new_predictions.csv
+
+# R session files
+.RData
+.Rhistory
+
+# LaTeX temporary files
+texput.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw M5 dataset files
+data/*.csv
