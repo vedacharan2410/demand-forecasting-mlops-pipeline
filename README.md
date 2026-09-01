@@ -103,6 +103,7 @@ Lag Features                    Rolling Features
                       v
                  Grafana
 
+
 ##Feature Engineering
 
 The feature engineering stage transforms historical demand into predictive time-series features.
@@ -121,7 +122,7 @@ day_number     -Numerical time representation
 Rolling statistics are calculated using shifted historical sales to reduce the risk of target leakage.
 
 ##Forecasting Model
-##LightGBM
+###LightGBM
 
 The project uses LightGBM (Light Gradient Boosting Machine) as the forecasting model.
 
