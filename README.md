@@ -152,11 +152,12 @@ Evaluate the model using RMSE.
 Repeat the optimization process.
 Select the best-performing configuration.
 Use the optimized configuration in the forecasting workflow.
-```
+
 The implemented experiment uses 10 Optuna trials and forecasts 5 selected products. 
+```
 
 
-##MLOps Architecture
+### MLOps Architecture
 ##ZenML
 
 ZenML is used to structure the machine learning workflow into reproducible pipeline steps.
