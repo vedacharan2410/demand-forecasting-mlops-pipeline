@@ -130,7 +130,7 @@ LightGBM is a gradient-boosting framework based on decision trees and is well su
 
 The model learns relationships between historical demand patterns and future demand using the engineered time-series features.
 
-##Evaluation Metrics
+### Evaluation Metrics
 
 The forecasting model is evaluated using:
 
@@ -139,12 +139,12 @@ MAPE — Mean Absolute Percentage Error
 
 A chronological train/test split is used instead of random shuffling because future observations must not be used to train the model.
 
-##Hyperparameter Optimization
+### Hyperparameter Optimization
 
 Optuna is used to search for an effective LightGBM hyperparameter configuration.
 
 The optimization workflow:
-
+```text
 Define the hyperparameter search space.
 Generate a trial.
 Train the LightGBM model.
@@ -152,7 +152,7 @@ Evaluate the model using RMSE.
 Repeat the optimization process.
 Select the best-performing configuration.
 Use the optimized configuration in the forecasting workflow.
-
+```
 The implemented experiment uses 10 Optuna trials and forecasts 5 selected products. 
 
 
