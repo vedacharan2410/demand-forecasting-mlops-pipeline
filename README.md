@@ -158,7 +158,7 @@ The implemented experiment uses 10 Optuna trials and forecasts 5 selected produc
 
 
 ### MLOps Architecture
-##ZenML
+### ZenML
 ```text
 ZenML is used to structure the machine learning workflow into reproducible pipeline steps.
 Feature Engineering
@@ -202,8 +202,9 @@ Number of forecasted products
 ### Grafana
 
 Grafana provides a dashboard for visualizing the forecasting and optimization metrics collected through Prometheus.
+
+### Project structure
 ```text
-##Project structure
 demand-forecasting-mlops-pipeline/
 │
 ├── data/
