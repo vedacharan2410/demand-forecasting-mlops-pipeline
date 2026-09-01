@@ -103,7 +103,7 @@ Lag Features                    Rolling Features
                       v
                  Grafana
 
-
+---
 ##Feature Engineering
 
 The feature engineering stage transforms historical demand into predictive time-series features.
