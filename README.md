@@ -159,7 +159,7 @@ The implemented experiment uses 10 Optuna trials and forecasts 5 selected produc
 
 ### MLOps Architecture
 ##ZenML
-
+```text
 ZenML is used to structure the machine learning workflow into reproducible pipeline steps.
 Feature Engineering
         |
@@ -171,36 +171,38 @@ Forecasting
         |
         v
 Evaluation
+```
 
-##MLflow
+### MLflow
 
 MLflow is used for experiment tracking.
 
 The workflow records:
-
+```text
 Model parameters
 Hyperparameters
 RMSE
 MAPE
 Optuna optimization results
 Experiment run information
+```
 
-##Prometheus
+### Prometheus
 
 Prometheus collects selected metrics exposed by the MLflow exporter.
 
 The monitored metrics include:
-
+```text
 Forecasting RMSE
 Forecasting MAPE
 Best Optuna RMSE
 Number of Optuna trials
 Number of forecasted products
-
-##Grafana
+```
+### Grafana
 
 Grafana provides a dashboard for visualizing the forecasting and optimization metrics collected through Prometheus.
-
+```text
 ##Project structure
 demand-forecasting-mlops-pipeline/
 │
@@ -243,8 +245,9 @@ demand-forecasting-mlops-pipeline/
 ├── .gitignore
 ├── .gitattributes
 └── README.md
+```
 
-##Technologies used 
+### Technologies used 
 | Technology | Purpose                               |
 | ---------- | ------------------------------------- |
 | Python     | Data processing and model development |
